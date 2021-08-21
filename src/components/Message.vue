@@ -15,12 +15,12 @@ export default{
 
 <style scoped>
 	.message-container{
-		color: #004085;
-		background-color: #cce5ff;
-		border: 2px solid #b8daff;
+		color: #fff;
+    	background-color: #58c75d;
+    	border: 2px solid #b8daff;
 		border-radius: 5px;
 		padding: 10px;
-		max-width: 305px;
+		max-width: 420px;
 		margin: 30px auto;
 	}
 </style>

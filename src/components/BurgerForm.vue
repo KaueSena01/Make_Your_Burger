@@ -112,7 +112,7 @@ import Message from './Message.vue';
 
 <style scoped>
 	#burger-form{
-		width: 320px;
+		width: 420px;
 		margin: 0 auto;
 	}
 	.input-container{
@@ -121,17 +121,20 @@ import Message from './Message.vue';
 		margin-bottom: 20px;
 	}
 	label{
+		font-family: 'Poppins';
 		font-weight: bold;
 		margin-bottom: 15px;
 		color: #222;
 		padding: 5px 10px;
-		border-left: 4px solid #fcba03;
+		border-left: 4px solid #fa8511;
 	}
 	input, select{
+		font-family: 'Poppins';
 		width: 100%;
-		padding: 5px 0px; 
+		padding: 10px 0px;
+		border: 2px solid #c3c3c3;
+		border-radius: 4px; 
 	}
-
 	#opcionais-container{
 		flex-direction: row;
 		flex-wrap: wrap;
@@ -150,23 +153,26 @@ import Message from './Message.vue';
 		width: auto;
 	}
 	.checkbox-container span{
-		margin-left: 6px;
 		font-weight: bold;
+		margin-left: 6px;
 	}
 	.submit-btn{
-		background-color: #222;
-		color: #fcba03;
+		font-family: 'Poppins';
+		background-color: #fa8511;
+		color: #fff;
 		font-weight: bold;
-		border: 2px solid #222;
+		border: 2px solid orange;
 		padding: 10px;
 		font-size: 16px;
 		margin: 0 auto;
 		border-radius: 3px;
 		cursor: pointer;
 		transition: .5s;
+		margin-bottom: 20px;
 	}
 	.submit-btn:hover{
-		background-color: transparent;
-		color: #222;
+		opacity: 0.8;
+		background-color: #fa8511;
+		color: #eee;
 	}
 </style>

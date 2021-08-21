@@ -7,7 +7,6 @@
 				<div>Cliente:</div>
 				<div>Pão:</div>
 				<div>Carne:</div>
-				<div>Opcionais:</div>
 				<div>Ações:</div>
 			</div>
 		</div>
@@ -18,15 +17,6 @@
 				<div>{{burger.nome}}</div>
 				<div>{{burger.pao}}</div>
 				<div>{{burger.carne}}</div>
-				<div>
-					<ul>
-					<li v-for="(opcional, index) in burger.opcionais" :key="index">
-						{{ opcional }}
-					</li>
-
-						<!-- O index é definido quando não há id -->
-					</ul>
-				</div>
 				<div>
 				<select name="status" class="status" @change="updateBuger($event, burger.id)">
 						<option value="">Selecione</option>
@@ -111,7 +101,7 @@ export default{
 			const res = await req.json();
 
 			// Mensagem do sistema
-			this.msg = `O pedido Nº ${res.id} foi atualizado para ${res.status}!`;
+			this.msg = `O pedido foi atualizado para ${res.status}!`;
 
 			// Limpar msg
 			setTimeout(() => this.msg = "", 5000);
@@ -136,6 +126,7 @@ export default{
 		flex-wrap: wrap;
 	}
 	#burger-table-heading{
+		font-family: 'Poppins';
 		font-weight: bold;
 		padding: 12px;
 		border-bottom: 3px solid #333;
@@ -143,6 +134,7 @@ export default{
 	#burger-table-heading div,
 	.burger-table-row div{
 		width: 16%;
+		font-family: 'Poppins';
 	}
 	.burger-table-row{
 		width: 100%;
@@ -151,6 +143,7 @@ export default{
 	}
 	#burger-table-heading .order-id,
 	#burger-table-row .order-number{
+		font-family: 'Poppins';
 		width: 16%;
 	}
 	select{
@@ -158,12 +151,14 @@ export default{
 		margin-right: 12px;
 		float: left;
 		border-radius: 2px;
+		font-family: 'Poppins';
 	}
 	.delete-btn{
-		background-color: #222;
-		color:  #fcba03;
+		font-family: 'Poppins';
+		background-color: #fa8511;
+		color: #fff;
 		font-weight: bold;
-		border: 2px solid #222;
+		border: 2px solid orange;
 		border-radius: 2px;
 		padding:4px 10px;
 		font-size: 16px;
@@ -174,7 +169,8 @@ export default{
 		float: right;
 	}
 	.delete-btn:hover{
-		background-color: transparent;
-		color: #222;
+		opacity: 0.8;
+		background-color: #fa8511;
+		color: #fff;
 	}
 </style>

@@ -1,10 +1,9 @@
 <template>
 	<div id="nav">
-		<router-link to="/" id="logo_url">
-			<img :src="logo" :alt="alt" id="logo">
-		</router-link>
+		
     	<router-link to="/">Home</router-link>
     	<router-link to="/Pedidos">Pedidos</router-link>
+
   </div>
 </template>
 
@@ -17,12 +16,12 @@
 	
 <style scoped>
 	#nav{
-		background-color:  #222;
-		border-bottom: 4px solid #111;
-		padding: 15px 50px;
+		background-color: #232323;
+		border-bottom: 4px solid #fa8511;
+		padding: 15px 25px;
 		display: flex;
-		justify-content: flex-end;
 		align-content: center;
+		/*justify-content: flex-end;*/
 	}
  	#nav #logo_url{
  		margin: auto;
@@ -33,12 +32,14 @@
  		height: 40px;
  	}
  	#nav a{
- 		color:  #fcba03;
+ 		color:  #fff;
  		text-decoration: none;
  		margin: 12px;
  		transition: .5s;
+ 		font-weight: normal;
+ 		font-family: 'Poppins';
  	}
  	#nav a:hover{
- 		color:  white;
+ 		color:  #fa8511;
  	}
 </style>

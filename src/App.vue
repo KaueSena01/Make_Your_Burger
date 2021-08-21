@@ -31,12 +31,14 @@
   .main-container {
     margin: 50px;
     min-height: 280px;
+    background-color: #eee;
+    border-radius: 5px;
   }
 
   h1{
     text-align: center;
     font-size: 42px; 
     margin-bottom: 30px;
-    color:  #222;
+    color:  #fa8511;
   }
 </style>
